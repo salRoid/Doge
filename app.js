@@ -2,17 +2,14 @@ document.querySelector('body').addEventListener('mousemove', eyeball);
 document.querySelector('.dog').addEventListener('mouseover', angryTeeth);
 document.querySelector('.dog').addEventListener('mouseout', smileyDog);
 
-const fang1 = document.querySelector('.fang1');
-const fang2 = document.querySelector('.fang2');
-const tongue = document.querySelector('.tongue');
+const tongue = document.querySelector('.tounge');
 const tail = document.querySelector('.dog-tail');
-const eye = document.querySelector('.dog-eye-white');
 const smile = document.querySelector('.dog-smile');
 const anger = document.querySelector('.dog-angry');
 const dogBody = document.querySelector('.dog-body');
 
 function eyeball(){
-    const eye = document.querySelectorAll('.dog-eye-black');
+    const eye = document.querySelectorAll('.dog-eyes-black');
     eye.forEach(function(eye) {
         let x = (eye.getBoundingClientRect().left) + (eye.clientWidth / 2);
         let y = (eye.getBoundingClientRect().top) + (eye.clientHeight / 2);
